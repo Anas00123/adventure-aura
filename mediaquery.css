@@ -2,7 +2,7 @@
 
     .hero-heading {
         font-size: 3rem;
-        text-align: center;
+        
     }
 
     .orange-button,
@@ -20,6 +20,10 @@
         width: 13rem;
         height: 13rem;
         left: -0.1rem;
+    }
+
+    .about-section {
+        padding-inline: 0.5rem;
     }
 
     .image-destination {
@@ -41,32 +45,36 @@
         display: flex;
         flex-direction: column-reverse;
         padding-inline: 1rem;
-        padding-bottom: 12rem;
+        top: 2.7rem;
+        padding-bottom: 7rem;
+
 
     }
 
-    .tour-left {
+
+    .tour-right>h1 {
         text-align: center;
-        padding-bottom: 1rem;
     }
-
-    .tour-left>h1 {
-        font-size: 2rem;
-        font-weight: 900;
-        font-family: "Playfair", serif;
+    .tour-right>span{
+        margin-left: 7rem;
     }
 
     .tour-details-1 {
         padding-block: 0rem;
 
     }
-.planning-section{
-    padding-bottom: 12rem;
-}
+
+    .why-us {
+        padding-top: 0;
+    }
+
+    .planning-section {
+        padding-bottom: 12rem;
+    }
 
     .planning-section-content {
         padding: 0;
-       text-align: center;
+        text-align: center;
 
 
     }
@@ -83,11 +91,13 @@
         position: absolute;
         bottom: -12rem;
         left: 2rem;
-        
+
     }
 
     .image-section {
         padding-top: 15rem;
     }
+    
+ 
 
 }
