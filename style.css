@@ -139,38 +139,42 @@
 .icon {
     color: tomato;
 }
+
 .testimonial {
     padding-block: 2rem;
-   display: flex;
+    display: flex;
     align-items: center;
     gap: 2rem;
 
 }
-.testimonial>img{
+
+.testimonial>img {
     border-radius: 50%;
     width: 8rem;
     height: 8rem;
 }
 
-.testimonial-img{
+.testimonial-img {
 
     position: relative;
     right: 1rem;
 }
-.destinations-image>img{
-   
+
+.destinations-image>img {
+
     border: none;
     border-radius: 5.5rem;
-    
-    
+
+
 }
-.image-destination{
+
+.image-destination {
     display: flex;
     justify-content: center;
     align-items: center;
-   width: 100%;
+    width: 100%;
     height: auto;
-   
+
 }
 
 .tour-image {
@@ -192,65 +196,78 @@
     opacity: 0.5;
     background-color: rgba(0, 0, 0);
 }
+
 .tour-content {
     position: relative;
     z-index: 1;
     color: white;
-  
+    top: 8rem;
+    padding-left: 10rem;
+    display: flex;
+
 }
+
 .popular-destination-heading {
     font-size: 3rem;
     font-weight: 700;
 }
+
 .tour-card {
     background-color: white;
     color: black;
     border-radius: 2rem;
+    padding: 2rem;
 
-   
+
 }
 
+.tour-details-1 {
+    padding-block: 1rem;
 
-.tour-details-1>i{
+}
+
+.tour-details-1>i {
     color: #e94a00;
     font-size: 2rem;
 }
+
 .tour-content {
-    padding-top: 5rem;
+    /* padding-top: 3rem; */
 
 }
-.tour-details-1{
-    padding-inline: 2rem;
-    padding-block: 1rem;
+
+
+
+.tour-row {
+
+
+
 }
-.tour-row{
-   
-  position: relative;
-  top: 3rem;
-  left: 8rem;
-   
-    
-}
-.Reviews-section{
+
+.Reviews-section {
 
     padding-top: 10rem;
 
 }
-.Reviews-content{
+
+.Reviews-content {
     padding-inline: 25rem;
     text-align: center;
 }
-.Reviews-content>i{
+
+.Reviews-content>i {
     color: #e94a00;
     font-size: 4rem;
 }
-.Reviews-content>h1{
+
+.Reviews-content>h1 {
     font-size: 4rem;
-     font-family: "Playfair", serif;
-     font-weight: 800;
+    font-family: "Playfair", serif;
+    font-weight: 800;
 }
-.Reviews-content>h4{
-     font-family: "Playfair", serif;
-     font-size: 1.5rem;
-     font-weight: 600;
+
+.Reviews-content>h4 {
+    font-family: "Playfair", serif;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
