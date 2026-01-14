@@ -90,6 +90,7 @@
     padding: 0.5rem 1.7rem;
     font-size: 1rem;
     border-radius: 5rem;
+
 }
 
 .popular-destination-heading {
@@ -203,7 +204,7 @@
     color: white;
     top: 8rem;
     padding-left: 10rem;
-    display: flex;
+
 
 }
 
@@ -236,14 +237,6 @@
 
 }
 
-
-
-.tour-row {
-
-
-
-}
-
 .Reviews-section {
 
     padding-top: 10rem;
@@ -251,7 +244,7 @@
 }
 
 .Reviews-content {
-    padding-inline: 25rem;
+
     text-align: center;
 }
 
@@ -270,4 +263,50 @@
     font-family: "Playfair", serif;
     font-size: 1.5rem;
     font-weight: 600;
+}
+
+.planning-section {
+
+    background-color: RGB(251, 86, 7);
+    position: relative;
+}
+
+.planning-section::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-image: url("assests/bootstrap/images/Travel-50.svg");
+    background-position: bottom center;
+    background-size: auto;
+    background-repeat: no-repeat
+}
+
+.planning-section-content {
+    padding-inline: 4rem;
+    padding-block: 6rem;
+
+}
+
+.planning-section-content>h1 {
+    font-family: "Playfair", serif;
+    font-size: 4rem;
+    font-weight: 700;
+
+}
+
+.planning-image {
+
+    position: absolute;
+    bottom: 0rem;
+    left: 7.5rem;
+
+
+}
+
+footer {
+    background-color:
+        RGB(0, 18, 25);
 }

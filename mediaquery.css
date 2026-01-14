@@ -21,17 +21,73 @@
         height: 13rem;
         left: -0.1rem;
     }
-     .tour-content {
+
+    .image-destination {
+        padding-bottom: 1.5rem;
+        padding-inline: 0;
+
+    }
+
+    .destinations-image>img {
+        border-radius: 10%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+
+
+    }
+
+    .tour-content {
         display: flex;
         flex-direction: column-reverse;
         padding-inline: 1rem;
-        padding-bottom: 10rem;
+        padding-bottom: 12rem;
+
+    }
+
+    .tour-left {
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .tour-left>h1 {
+        font-size: 2rem;
+        font-weight: 900;
+        font-family: "Playfair", serif;
+    }
+
+    .tour-details-1 {
+        padding-block: 0rem;
+
+    }
+.planning-section{
+    padding-bottom: 12rem;
+}
+
+    .planning-section-content {
+        padding: 0;
+       text-align: center;
+
+
+    }
+
+    .planning-section-content>h1 {
+        font-family: "Playfair", serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+
+    }
+
+    .planning-image {
+
+        position: absolute;
+        bottom: -12rem;
+        left: 2rem;
         
     }
-  .tour-row{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
+
+    .image-section {
+        padding-top: 15rem;
+    }
+
 }
