@@ -7,19 +7,21 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="assests/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="mediaquery.css">
     <link rel="stylesheet" href="assests/bootstrap/js/bootstrap.js">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair:wght@400;700&display=swap"
         rel="stylesheet">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <!-- header starts -->
     <section class="first-section lato px-5 py-4">
-        <nav class="navbar navbar-expand-lg ">
+        <nav class="navbar navbar-expand-lg  ">
             <div class="container-fluid">
                 <img src="assests/bootstrap/images/header-logo-1.svg" alt="">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -41,9 +43,9 @@
 
                     </ul>
                     <form>
-                        <div class="btn-style">
+                        <div class="">
 
-                            <button class="btn fs-5 text-white" type="submit">Plan Your trip</button>
+                            <button class="btn-style text-white" type="submit">Plan Your trip</button>
 
                         </div>
                     </form>
@@ -57,28 +59,31 @@
         <div class="header-content containner-fliud ">
             <div class="row">
 
-                <div class="col-lg-6 ms-5 ">
+                <div class="col-lg-6  ">
                     <span
                         class=" bg-white bg-opacity-25  px-4  text-uppercase py-2 rounded-5 text-light mb-3 d-inline-block">
                         Experience Luxury Travel
 
                     </span>
 
-                    <h1 class="playfair p1 ">
+                    <h1 class="playfair p1 hero-heading">
                         Explore the World Like Never Before
                     </h1>
 
-                    <p class="lato">Curated journeys to the world's most extraordinary destinations. Let us transform
+                    <p class="lato ">Curated journeys to the world's most extraordinary destinations. Let us transform
                         your
                         travel dreams into unforgettable memories.</p>
 
-                    <div class=" d-flex gap-3 pt-3 ">
+                    <div class=" d-flex gap-3 pt-3 align-items-center justify-content-start">
+                        <div>
+                            <button class="orange-button" type="submit">Start Planning
+                                <i class="ri-arrow-right-circle-line"></i> </button>
+                        </div>
 
-                        <button class="orange-button px-5 py-3" type="submit">Start Planning &nbsp; <i
-                                class="ri-arrow-right-circle-line"></i> </button>
-                        <button class="white-button bg-light bg-opacity-25 px-5 py-3 text-light" type="submit"> <i
-                                class=" ri-play-circle-line"></i> &nbsp;watch Video</button>
-
+                        <div>
+                            <button class="white-button " type="submit">
+                                <i class=" ri-play-circle-line"></i>watch Video</button>
+                        </div>
                     </div>
 
                 </div>
@@ -93,171 +98,341 @@
 
     <!-- header ends -->
 
-<!-- handpicked-packages starts -->
-    <section class="handpicked-packages">
+    <!-- handpicked-packages starts -->
+
+
+
+    <section class="handpicked-packages px-5">
         <div class="container-fluid pt-5">
             <div class="row py-5 ">
-                <div class="col-lg-12 text-center ">
+                <div class="col-lg-12 text-center d-flex flex-column align-items-center gap-3">
+                    <span class="popular-destination lato-font ">
+                        popular destinations
+                    </span>
+                    <h1 class=" playfair-font popular-destination-heading fs-sm-1">Handpicked Packages</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-12  col-md-6 package-card">
+                    <div class="img-container">
+                        <img class="img-fluid" src="assests/bootstrap/images/packages-01.jpg" alt="">
+                    </div>
+                    <div class="package-card-details d-flex flex-column gap-1 align-items-center">
+                        <span class="star-svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Icons" height="60" viewBox="0 0 60 60"
+                                width="60">
+                                <path
+                                    d="m40.785 22.715-6.056-.881a1 1 0 0 1 -.753-.547l-2.708-5.5a1.414 1.414 0 0 0 -2.538 0l-2.707 5.5a1 1 0 0 1 -.753.547l-6.057.881a1.42 1.42 0 0 0 -.783 2.42l4.382 4.279a1 1 0 0 1 .288.885l-1.036 6.041a1.416 1.416 0 0 0 2.053 1.495l5.417-2.852a1 1 0 0 1 .932 0l5.417 2.852a1.383 1.383 0 0 0 1.486-.106 1.4 1.4 0 0 0 .566-1.389l-1.035-6.04a1 1 0 0 1 .288-.885l4.381-4.279a1.419 1.419 0 0 0 -.784-2.42z">
+                                </path>
+                                <path
+                                    d="m4.656 45.321a.576.576 0 0 0 .839.608l3.54-1.86a.994.994 0 0 1 .93 0l3.54 1.861a.578.578 0 0 0 .84-.608l-.443-2.6a2.756 2.756 0 0 1 -2.827-.263 2.713 2.713 0 0 1 -1.08-2.673l.667-3.823-2.478-2.377-.977 1.988a1 1 0 0 1 -.755.549l-3.96.57a.584.584 0 0 0 -.316.992l2.863 2.8a1 1 0 0 1 .287.882z">
+                                </path>
+                                <path
+                                    d="m16.545 25.957-1.711 3.422a1 1 0 0 1 -.754.543l-4.43.63a.738.738 0 0 0 -.613.513.71.71 0 0 0 .189.748l3.206 3.077a1 1 0 0 1 .293.893l-.76 4.35a.713.713 0 0 0 .294.714.771.771 0 0 0 .82.066l3.96-2.059a1 1 0 0 1 .923 0l3.959 2.06a.771.771 0 0 0 .819-.066.715.715 0 0 0 .3-.713l-.029-.172a3.406 3.406 0 0 1 -2.917-3.963l.946-5.523-4.007-3.913a3.441 3.441 0 0 1 -.488-.607z">
+                                </path>
+                                <path
+                                    d="m46.5 45.929 3.54-1.86a.994.994 0 0 1 .93 0l3.54 1.861a.578.578 0 0 0 .84-.608l-.671-3.952a1 1 0 0 1 .287-.882l2.859-2.8a.584.584 0 0 0 -.315-1l-3.957-.569a1 1 0 0 1 -.755-.549l-.977-1.988-2.479 2.378.669 3.825a2.714 2.714 0 0 1 -1.081 2.671 2.721 2.721 0 0 1 -2.827.266l-.443 2.6a.577.577 0 0 0 .84.607z">
+                                </path>
+                                <path
+                                    d="m50.778 31.81a.709.709 0 0 0 .185-.745.741.741 0 0 0 -.617-.514l-4.426-.629a1 1 0 0 1 -.754-.543l-1.712-3.423a3.448 3.448 0 0 1 -.488.61l-4.006 3.913.945 5.521a3.413 3.413 0 0 1 -2.911 3.964l-.028.163a.714.714 0 0 0 .293.718.771.771 0 0 0 .82.066l3.96-2.059a1 1 0 0 1 .922 0l3.961 2.06a.771.771 0 0 0 .819-.067.713.713 0 0 0 .3-.712l-.762-4.352a1 1 0 0 1 .293-.893z">
+                                </path>
+                            </svg>
+                        </span>
+                        <p class="popular-destination mb-0">europe</p>
+                        <h3 class="playfair-font package-card-details-h3 mb-0">Spain</h3>
+                        <span>From $2,499</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-12  col-md-6 package-card">
+                    <div class="img-container">
+                        <img class="img-fluid" src="assests/bootstrap/images/packages-02.jpg" alt="">
+                    </div>
+                    <div class="package-card-details d-flex flex-column gap-1 align-items-center">
+                        <span class="star-svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Icons" height="60" viewBox="0 0 60 60"
+                                width="60">
+                                <path
+                                    d="m40.785 22.715-6.056-.881a1 1 0 0 1 -.753-.547l-2.708-5.5a1.414 1.414 0 0 0 -2.538 0l-2.707 5.5a1 1 0 0 1 -.753.547l-6.057.881a1.42 1.42 0 0 0 -.783 2.42l4.382 4.279a1 1 0 0 1 .288.885l-1.036 6.041a1.416 1.416 0 0 0 2.053 1.495l5.417-2.852a1 1 0 0 1 .932 0l5.417 2.852a1.383 1.383 0 0 0 1.486-.106 1.4 1.4 0 0 0 .566-1.389l-1.035-6.04a1 1 0 0 1 .288-.885l4.381-4.279a1.419 1.419 0 0 0 -.784-2.42z">
+                                </path>
+                                <path
+                                    d="m4.656 45.321a.576.576 0 0 0 .839.608l3.54-1.86a.994.994 0 0 1 .93 0l3.54 1.861a.578.578 0 0 0 .84-.608l-.443-2.6a2.756 2.756 0 0 1 -2.827-.263 2.713 2.713 0 0 1 -1.08-2.673l.667-3.823-2.478-2.377-.977 1.988a1 1 0 0 1 -.755.549l-3.96.57a.584.584 0 0 0 -.316.992l2.863 2.8a1 1 0 0 1 .287.882z">
+                                </path>
+                                <path
+                                    d="m16.545 25.957-1.711 3.422a1 1 0 0 1 -.754.543l-4.43.63a.738.738 0 0 0 -.613.513.71.71 0 0 0 .189.748l3.206 3.077a1 1 0 0 1 .293.893l-.76 4.35a.713.713 0 0 0 .294.714.771.771 0 0 0 .82.066l3.96-2.059a1 1 0 0 1 .923 0l3.959 2.06a.771.771 0 0 0 .819-.066.715.715 0 0 0 .3-.713l-.029-.172a3.406 3.406 0 0 1 -2.917-3.963l.946-5.523-4.007-3.913a3.441 3.441 0 0 1 -.488-.607z">
+                                </path>
+                                <path
+                                    d="m46.5 45.929 3.54-1.86a.994.994 0 0 1 .93 0l3.54 1.861a.578.578 0 0 0 .84-.608l-.671-3.952a1 1 0 0 1 .287-.882l2.859-2.8a.584.584 0 0 0 -.315-1l-3.957-.569a1 1 0 0 1 -.755-.549l-.977-1.988-2.479 2.378.669 3.825a2.714 2.714 0 0 1 -1.081 2.671 2.721 2.721 0 0 1 -2.827.266l-.443 2.6a.577.577 0 0 0 .84.607z">
+                                </path>
+                                <path
+                                    d="m50.778 31.81a.709.709 0 0 0 .185-.745.741.741 0 0 0 -.617-.514l-4.426-.629a1 1 0 0 1 -.754-.543l-1.712-3.423a3.448 3.448 0 0 1 -.488.61l-4.006 3.913.945 5.521a3.413 3.413 0 0 1 -2.911 3.964l-.028.163a.714.714 0 0 0 .293.718.771.771 0 0 0 .82.066l3.96-2.059a1 1 0 0 1 .922 0l3.961 2.06a.771.771 0 0 0 .819-.067.713.713 0 0 0 .3-.712l-.762-4.352a1 1 0 0 1 .293-.893z">
+                                </path>
+                            </svg>
+                        </span>
+                        <p class="popular-destination mb-0">europe</p>
+                        <h3 class="playfair-font package-card-details-h3 mb-0">Spain</h3>
+                        <span>From $2,499</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-12 col-md-6 package-card">
+                    <div class="img-container">
+                        <img class="img-fluid" src="assests/bootstrap/images/packages-03.jpg" alt="">
+                    </div>
+                    <div class="package-card-details d-flex flex-column gap-1 align-items-center">
+                        <span class="star-svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Icons" height="60" viewBox="0 0 60 60"
+                                width="60">
+                                <path
+                                    d="m40.785 22.715-6.056-.881a1 1 0 0 1 -.753-.547l-2.708-5.5a1.414 1.414 0 0 0 -2.538 0l-2.707 5.5a1 1 0 0 1 -.753.547l-6.057.881a1.42 1.42 0 0 0 -.783 2.42l4.382 4.279a1 1 0 0 1 .288.885l-1.036 6.041a1.416 1.416 0 0 0 2.053 1.495l5.417-2.852a1 1 0 0 1 .932 0l5.417 2.852a1.383 1.383 0 0 0 1.486-.106 1.4 1.4 0 0 0 .566-1.389l-1.035-6.04a1 1 0 0 1 .288-.885l4.381-4.279a1.419 1.419 0 0 0 -.784-2.42z">
+                                </path>
+                                <path
+                                    d="m4.656 45.321a.576.576 0 0 0 .839.608l3.54-1.86a.994.994 0 0 1 .93 0l3.54 1.861a.578.578 0 0 0 .84-.608l-.443-2.6a2.756 2.756 0 0 1 -2.827-.263 2.713 2.713 0 0 1 -1.08-2.673l.667-3.823-2.478-2.377-.977 1.988a1 1 0 0 1 -.755.549l-3.96.57a.584.584 0 0 0 -.316.992l2.863 2.8a1 1 0 0 1 .287.882z">
+                                </path>
+                                <path
+                                    d="m16.545 25.957-1.711 3.422a1 1 0 0 1 -.754.543l-4.43.63a.738.738 0 0 0 -.613.513.71.71 0 0 0 .189.748l3.206 3.077a1 1 0 0 1 .293.893l-.76 4.35a.713.713 0 0 0 .294.714.771.771 0 0 0 .82.066l3.96-2.059a1 1 0 0 1 .923 0l3.959 2.06a.771.771 0 0 0 .819-.066.715.715 0 0 0 .3-.713l-.029-.172a3.406 3.406 0 0 1 -2.917-3.963l.946-5.523-4.007-3.913a3.441 3.441 0 0 1 -.488-.607z">
+                                </path>
+                                <path
+                                    d="m46.5 45.929 3.54-1.86a.994.994 0 0 1 .93 0l3.54 1.861a.578.578 0 0 0 .84-.608l-.671-3.952a1 1 0 0 1 .287-.882l2.859-2.8a.584.584 0 0 0 -.315-1l-3.957-.569a1 1 0 0 1 -.755-.549l-.977-1.988-2.479 2.378.669 3.825a2.714 2.714 0 0 1 -1.081 2.671 2.721 2.721 0 0 1 -2.827.266l-.443 2.6a.577.577 0 0 0 .84.607z">
+                                </path>
+                                <path
+                                    d="m50.778 31.81a.709.709 0 0 0 .185-.745.741.741 0 0 0 -.617-.514l-4.426-.629a1 1 0 0 1 -.754-.543l-1.712-3.423a3.448 3.448 0 0 1 -.488.61l-4.006 3.913.945 5.521a3.413 3.413 0 0 1 -2.911 3.964l-.028.163a.714.714 0 0 0 .293.718.771.771 0 0 0 .82.066l3.96-2.059a1 1 0 0 1 .922 0l3.961 2.06a.771.771 0 0 0 .819-.067.713.713 0 0 0 .3-.712l-.762-4.352a1 1 0 0 1 .293-.893z">
+                                </path>
+                            </svg>
+                        </span>
+                        <p class="popular-destination mb-0">europe</p>
+                        <h3 class="playfair-font package-card-details-h3 mb-0">Spain</h3>
+                        <span>From $2,499</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- handpicked-packages ends  -->
+
+
+    <!-- about-us-section starts -->
+    <section class="about-us-section ">
+
+        <div class="container-fluid about-section ">
+
+            <div class="row   d-flex align-items-center justify-content-center ">
+
+                <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center  ">
+                    <div>
+                        <img class="img-fluid" src="assests/bootstrap/images/image-6.png" alt="">
+                    </div>
+
+                </div>
+                <div class="col-lg-6  ">
                     <span
                         class=" bg-danger bg-opacity-25 px-4  text-uppercase py-2 rounded-5 text-danger mb-3 d-inline-block">
-                        popular destinations
+                        ABOUT US
 
                     </span>
+                    <h1>Your Journey, Our <br> Passion</h1>
+                    <p>We believe that travel is more than just visiting new places; it's about creating memories,
+                        experiencing diverse cultures, and discovering the wonders of the world. With years of
+                        experience in the travel industry, our dedicated team is committed to providing exceptional
+                        travel experiences tailored to your unique desires and needs.</p>
+
+                    <div class="row  d-flex align-items-center justify-content-center ">
+
+                        <div class="col-lg-6">
+                            <div class="one"><img class="img-fluid rounded-5"
+                                    src="assests/bootstrap/images/home-journey2.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 ">
+                            <div class="aboutus-two">
+
+                                <p><i class=" icon fs-5 pe-3 ri-checkbox-circle-line"></i>Budget-Friendly</p>
+                                <p><i class=" icon fs-5 pe-3 ri-checkbox-circle-line"></i>Luxurious gateways</p>
+                                <p><i class=" icon fs-5 pe-3 ri-checkbox-circle-line"></i>Trusted Local Guides</p>
+                                <button class=" orange-button">Learn More<i
+                                        class="ri-arrow-right-circle-line"></i></button>
+                            </div>
+                        </div>
+                    </div>
 
 
-                    <h1 class="handpicked-packages-h1 playfair">Handpicked Packages</h1>
+
+
+                    <div class="testimonial ">
+                        <div class=""> <img class="img-fluid rounded-5" src="assests/bootstrap/images/home-journey3.jpg"
+                                alt="">
+                            <img class="img-fluid rounded-5 testimonial-img"
+                                src="assests/bootstrap/images/home-journey4.jpg" alt="">
+                        </div>
+
+
+                        <div class="testimonial-para pt-3">
+                            <p>4.7 Star Rating <br>
+                                Based on 3,571 Reviews</p>
+                        </div>
+                    </div>
+
+
 
 
                 </div>
+
+
             </div>
-
-            <div class="row  px-4">
-
-
-                <div class="col-lg-4 "><img class="handpicked-packages-image"
-                        src="assests/bootstrap/images/packages-01.jpg" alt="">
-
-
-                    <div class="europe">
-                        <svg class="stars" xmlns="http://www.w3.org/2000/svg" id="Icons" height="80" viewBox="0 0 60 60"
-                            width="80">
-                            <path
-                                d="m40.785 22.715-6.056-.881a1 1 0 0 1 -.753-.547l-2.708-5.5a1.414 1.414 0 0 0 -2.538 0l-2.707 5.5a1 1 0 0 1 -.753.547l-6.057.881a1.42 1.42 0 0 0 -.783 2.42l4.382 4.279a1
-                     1 0 0 1 .288.885l-1.036 6.041a1.416 1.416 0 0 0 2.053
-                      1.495l5.417-2.852a1 1 0 0 1 .932 0l5.417 2.852a1.383
-                       1.383 0 0 0 1.486-.106 1.4 1.4 0 0 0 .566-1.389l-1.035-6.04a1 1 0 0 1 .288-.885l4.381-4.279a1.419 1.419 0 0 0 -.784-2.42z">
-                            </path>
-                            <path
-                                d="m4.656 45.321a.576.576 0 0 0 .839.608l3.54-1.86a.994.994 0 0 1 .93 0l3.54 1.861a.578.578 0 0 0 .84-.608l-.443-2.6a2.756 2.756 0 0 1 -2.827-.263 2.713 2.713 0 0 1 -1.08-2.673l.667-3.823-2.478-2.377-.977 1.988a1 1 0 0 1 -.755.549l-3.96.57a.584.584 0 0 0 -.316.992l2.863 2.8a1 1 0 0 1 .287.882z">
-                            </path>
-                            <path
-                                d="m16.545 25.957-1.711 3.422a1 1 0 0 1 -.754.543l-4.43.63a.738.738 0 0 0 -.613.513.71.71 0 0 0 .189.748l3.206 3.077a1 1 0 0 1 .293.893l-.76 4.35a.713.713 0 0 0 .294.714.771.771 0 0 0 .82.066l3.96-2.059a1 1 0 0 1 .923 0l3.959 2.06a.771.771 0 0 0 .819-.066.715.715 0 0 0 .3-.713l-.029-.172a3.406 3.406 0 0 1 -2.917-3.963l.946-5.523-4.007-3.913a3.441 3.441 0 0 1 -.488-.607z">
-                            </path>
-                            <path
-                                d="m46.5 45.929 3.54-1.86a.994.994 0 0 1 .93 0l3.54 1.861a.578.578 0 0 0 .84-.608l-.671-3.952a1 1 0 0 1 .287-.882l2.859-2.8a.584.584 0 0 0 -.315-1l-3.957-.569a1 1 0 0 1 -.755-.549l-.977-1.988-2.479 2.378.669 3.825a2.714 2.714 0 0 1 -1.081 2.671 2.721 2.721 0 0 1 -2.827.266l-.443 2.6a.577.577 0 0 0 .84.607z">
-                            </path>
-                            <path
-                                d="m50.778 31.81a.709.709 0 0 0 .185-.745.741.741 0 0 0 -.617-.514l-4.426-.629a1 1 0 0 1 -.754-.543l-1.712-3.423a3.448 3.448 0 0 1 -.488.61l-4.006 3.913.945 5.521a3.413 3.413 0 0 1 -2.911 3.964l-.028.163a.714.714 0 0 0 .293.718.771.771 0 0 0 .82.066l3.96-2.059a1 1 0 0 1 .922 0l3.961 2.06a.771.771 0 0 0 .819-.067.713.713 0 0 0 .3-.712l-.762-4.352a1 1 0 0 1 .293-.893z">
-                            </path>
-
-                        </svg><br>
-
-                        <span
-                            class=" bg-danger bg-opacity-25 px-4  text-uppercase py-2 rounded-5 text-danger mb-3 d-inline-block">
-                            europe
-
-                        </span>
-                          <h1 class="playfair">Spain</h1>
-                        <span>From $2,499</span>
-
-                    </div>
-
-
-
-
-                </div>
-                <div class="col-lg-4"><img class="handpicked-packages-image"
-                        src="assests/bootstrap/images/packages-02.jpg" alt="">
-
-                    <div class="europe">
-                        <svg class="stars" xmlns="http://www.w3.org/2000/svg" id="Icons" height="80" viewBox="0 0 60 60"
-                            width="80">
-                            <path
-                                d="m40.785 22.715-6.056-.881a1 1 0 0 1 -.753-.547l-2.708-5.5a1.414 1.414 0 0 0 -2.538 0l-2.707 5.5a1 1 0 0 1 -.753.547l-6.057.881a1.42 1.42 0 0 0 -.783 2.42l4.382 4.279a1
-                     1 0 0 1 .288.885l-1.036 6.041a1.416 1.416 0 0 0 2.053
-                      1.495l5.417-2.852a1 1 0 0 1 .932 0l5.417 2.852a1.383
-                       1.383 0 0 0 1.486-.106 1.4 1.4 0 0 0 .566-1.389l-1.035-6.04a1 1 0 0 1 .288-.885l4.381-4.279a1.419 1.419 0 0 0 -.784-2.42z">
-                            </path>
-                            <path
-                                d="m4.656 45.321a.576.576 0 0 0 .839.608l3.54-1.86a.994.994 0 0 1 .93 0l3.54 1.861a.578.578 0 0 0 .84-.608l-.443-2.6a2.756 2.756 0 0 1 -2.827-.263 2.713 2.713 0 0 1 -1.08-2.673l.667-3.823-2.478-2.377-.977 1.988a1 1 0 0 1 -.755.549l-3.96.57a.584.584 0 0 0 -.316.992l2.863 2.8a1 1 0 0 1 .287.882z">
-                            </path>
-                            <path
-                                d="m16.545 25.957-1.711 3.422a1 1 0 0 1 -.754.543l-4.43.63a.738.738 0 0 0 -.613.513.71.71 0 0 0 .189.748l3.206 3.077a1 1 0 0 1 .293.893l-.76 4.35a.713.713 0 0 0 .294.714.771.771 0 0 0 .82.066l3.96-2.059a1 1 0 0 1 .923 0l3.959 2.06a.771.771 0 0 0 .819-.066.715.715 0 0 0 .3-.713l-.029-.172a3.406 3.406 0 0 1 -2.917-3.963l.946-5.523-4.007-3.913a3.441 3.441 0 0 1 -.488-.607z">
-                            </path>
-                            <path
-                                d="m46.5 45.929 3.54-1.86a.994.994 0 0 1 .93 0l3.54 1.861a.578.578 0 0 0 .84-.608l-.671-3.952a1 1 0 0 1 .287-.882l2.859-2.8a.584.584 0 0 0 -.315-1l-3.957-.569a1 1 0 0 1 -.755-.549l-.977-1.988-2.479 2.378.669 3.825a2.714 2.714 0 0 1 -1.081 2.671 2.721 2.721 0 0 1 -2.827.266l-.443 2.6a.577.577 0 0 0 .84.607z">
-                            </path>
-                            <path
-                                d="m50.778 31.81a.709.709 0 0 0 .185-.745.741.741 0 0 0 -.617-.514l-4.426-.629a1 1 0 0 1 -.754-.543l-1.712-3.423a3.448 3.448 0 0 1 -.488.61l-4.006 3.913.945 5.521a3.413 3.413 0 0 1 -2.911 3.964l-.028.163a.714.714 0 0 0 .293.718.771.771 0 0 0 .82.066l3.96-2.059a1 1 0 0 1 .922 0l3.961 2.06a.771.771 0 0 0 .819-.067.713.713 0 0 0 .3-.712l-.762-4.352a1 1 0 0 1 .293-.893z">
-                            </path>
-                        </svg><br>
-                        <span
-                            class=" bg-danger bg-opacity-25 px-4  text-uppercase py-2 rounded-5 text-danger mb-3 d-inline-block">
-                            europe
-
-                        </span>
-                          <h1 class="playfair">Australia</h1>
-                        <span>From $2,499</span>
-
-                      
-                    </div>
-
-                </div>
-                <div class="col-lg-4"><img class="handpicked-packages-image"
-                        src="assests/bootstrap/images/packages-03.jpg" alt="">
-
-                    <div class="europe">
-                        <svg class="stars" xmlns="http://www.w3.org/2000/svg" id="Icons" height="80" viewBox="0 0 60 60"
-                            width="80">
-                            <path
-                                d="m40.785 22.715-6.056-.881a1 1 0 0 1 -.753-.547l-2.708-5.5a1.414 1.414 0 0 0 -2.538 0l-2.707 5.5a1 1 0 0 1 -.753.547l-6.057.881a1.42 1.42 0 0 0 -.783 2.42l4.382 4.279a1
-                     1 0 0 1 .288.885l-1.036 6.041a1.416 1.416 0 0 0 2.053
-                      1.495l5.417-2.852a1 1 0 0 1 .932 0l5.417 2.852a1.383
-                       1.383 0 0 0 1.486-.106 1.4 1.4 0 0 0 .566-1.389l-1.035-6.04a1 1 0 0 1 .288-.885l4.381-4.279a1.419 1.419 0 0 0 -.784-2.42z">
-                            </path>
-                            <path
-                                d="m4.656 45.321a.576.576 0 0 0 .839.608l3.54-1.86a.994.994 0 0 1 .93 0l3.54 1.861a.578.578 0 0 0 .84-.608l-.443-2.6a2.756 2.756 0 0 1 -2.827-.263 2.713 2.713 0 0 1 -1.08-2.673l.667-3.823-2.478-2.377-.977 1.988a1 1 0 0 1 -.755.549l-3.96.57a.584.584 0 0 0 -.316.992l2.863 2.8a1 1 0 0 1 .287.882z">
-                            </path>
-                            <path
-                                d="m16.545 25.957-1.711 3.422a1 1 0 0 1 -.754.543l-4.43.63a.738.738 0 0 0 -.613.513.71.71 0 0 0 .189.748l3.206 3.077a1 1 0 0 1 .293.893l-.76 4.35a.713.713 0 0 0 .294.714.771.771 0 0 0 .82.066l3.96-2.059a1 1 0 0 1 .923 0l3.959 2.06a.771.771 0 0 0 .819-.066.715.715 0 0 0 .3-.713l-.029-.172a3.406 3.406 0 0 1 -2.917-3.963l.946-5.523-4.007-3.913a3.441 3.441 0 0 1 -.488-.607z">
-                            </path>
-                            <path
-                                d="m46.5 45.929 3.54-1.86a.994.994 0 0 1 .93 0l3.54 1.861a.578.578 0 0 0 .84-.608l-.671-3.952a1 1 0 0 1 .287-.882l2.859-2.8a.584.584 0 0 0 -.315-1l-3.957-.569a1 1 0 0 1 -.755-.549l-.977-1.988-2.479 2.378.669 3.825a2.714 2.714 0 0 1 -1.081 2.671 2.721 2.721 0 0 1 -2.827.266l-.443 2.6a.577.577 0 0 0 .84.607z">
-                            </path>
-                            <path
-                                d="m50.778 31.81a.709.709 0 0 0 .185-.745.741.741 0 0 0 -.617-.514l-4.426-.629a1 1 0 0 1 -.754-.543l-1.712-3.423a3.448 3.448 0 0 1 -.488.61l-4.006 3.913.945 5.521a3.413 3.413 0 0 1 -2.911 3.964l-.028.163a.714.714 0 0 0 .293.718.771.771 0 0 0 .82.066l3.96-2.059a1 1 0 0 1 .922 0l3.961 2.06a.771.771 0 0 0 .819-.067.713.713 0 0 0 .3-.712l-.762-4.352a1 1 0 0 1 .293-.893z">
-                            </path>
-                        </svg><br>
-
-                        <span
-                            class=" bg-danger bg-opacity-25 px-4  text-uppercase py-2 rounded-5 text-danger mb-3 d-inline-block">
-                            europe
-
-                        </span>
-                          <h1 class="playfair">Egypt</h1>
-                        <span>From $2,499</span>
-
-                    </div>
-
-                </div>
-            </div>
-
-
 
         </div>
-
-
+        </div>
 
 
     </section>
-<!-- handpicked-packages ends  -->
+    <!-- about-us-section ends -->
+
+    <!-- destinations starts-->
+    <section class="destinations-section">
+
+        <div class="container-fluid px-5 py-5 ">
+            <div class="row">
+
+                <div class="col-lg-4  d-flex flex-column align-items-start justify-content-center py-5 px-5">
+                    <div class="destinations-content">
+                        <span class="popular-destination lato-font ">
+                            Choose Your Place
+                        </span>
+                        <h1 class=" playfair-font popular-destination-heading fs-sm-1">Popular Destinations</h1>
+                        <p>Join us as we explore the wonders of the globe, one incredible journey at a time.</p>
+                        <div>
+                            <button class="orange-button" type="submit">Start Planning
+                                <i class="ri-arrow-right-circle-line"></i> </button>
+                        </div>
+                    </div>
+
+                </div>
 
 
-<!-- about-us-section starts -->
-<section>
 
-    <div class="container-fluid">
 
-        <div class="row ">
+                <div class="col-lg-4 image-destination">
+                    <div class=" destinations-image"><img class="img-fluid"
+                            src="assests/bootstrap/images/home-destination1.jpg" alt=""></div>
+                </div>
+                <div class="col-lg-4 image-destination">
+                    <div class=" destinations-image"><img class="img-fluid"
+                            src="assests/bootstrap/images/home-destination2-1.jpg" alt=""></div>
+                </div>
+                <div class="col-lg-4 image-destination">
+                    <div class=" destinations-image"><img class="img-fluid"
+                            src="assests/bootstrap/images/home-destination3.jpg" alt=""></div>
+                </div>
+                <div class="col-lg-4 image-destination">
+                    <div class=" destinations-image"><img class="img-fluid"
+                            src="assests/bootstrap/images/home-destination4.jpg" alt=""></div>
+                </div>
+                <div class="col-lg-4 image-destination">
+                    <div class=" destinations-image"><img class="img-fluid"
+                            src="assests/bootstrap/images/home-destination5-1.jpg" alt=""></div>
+                </div>
+            </div>
 
-            <div class="col-lg-6"><img src="assests/bootstrap/images/image-6.png" alt=""></div>
-            <div class="col-lg-6">2</div>
+    </section>
+
+    <!-- destinations ends -->
+
+    <!-- crafting section starts -->
+
+    <section class="tour-image">
+        <div class="container-fluid tour-content ">
+            <div class="row tour-row ">
+
+                <div class="col-lg-4  ">
+                    <div class="tour-card py-5 ">
+                        <div class="tour-details-1">
+                        <i class="fa-solid fa-plane "></i>
+                      <h3 >Customized Packages</h3>
+                      <p>Tailor-made itineraries to suit your preferences and interests, ensuring a unique travel experience every time.</p>
+                        <hr>
+                        </div>
+                         
+                        <div class="tour-details-1">
+                        <i class="fa-solid fa-person-hiking"></i>
+
+                      <h3>Customized Packages</h3>
+                      <p>Tailor-made itineraries to suit your preferences and interests, ensuring a unique travel experience every time.</p>
+                        <hr>
+                        </div>
+
+                        <div class="tour-details-1">
+                       <i class="fa-solid fa-bath"></i>
+                      <h3 >Customized Packages</h3>
+                      <p>Tailor-made itineraries to suit your preferences and interests, ensuring a unique travel experience every time.</p>
+                        <hr>
+                            </div>
+                    </div>
+                  
+
+                </div>
+
+                <div class="col-lg-8 d-flex justify-content-center ">
+                    <div class="">
+
+                        <span
+                            class=" fs-5 bg-light bg-opacity-25 px-4  text-uppercase py-2 rounded-5 text-light mb-3 d-inline-block">
+                           WHY US
+
+                        </span>
+                        <h1 class=" playfair-font popular-destination-heading fs-sm-1 text-light ">
+                            Crafting <br> Unforgettable <br> Journeys
+                        </h1>
+                    </div>
+
+                </div>
+            </div>
         </div>
-    </div>
+
+    </section>
+
+    <!-- crafting section ends  -->
+    <!-- Reviews section  starts-->
+
+    <section class="">
+        <div class="container-fluid Reviews-section"> 
+            <div class="row">
+
+                <div class="col-lg-12 ">
+
+                    <div class="Reviews-content   ">
+
+                        <span
+                            class=" fs-5 bg-warning text-danger bg-opacity-25 px-4  text-uppercase py-2 rounded-5  mb-3 d-inline-block">
+                          TESTIMONIALS
+
+                        </span>
+                        <h1 class="">
+                            Top Reviews
+                        </h1>
+
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>“An absolutely incredible experience! The attention to detail and personalized <br> service made our Maldives trip unforgettable. Highly recommend!”</p>
+                        <img class="img-fluid" src="assests/bootstrap/images/home-review.png" alt=""> <br> <br>
+                        <h4>James Anderson</h4>
+                    </div>
 
 
-</section>
-<!-- about-us-section ends -->
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </section>
+     <!-- Reviews section ends  -->
+
+
 
     <script src="assests/bootstrap/js/bootstrap.js"></script>
 </body>

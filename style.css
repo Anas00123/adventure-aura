@@ -1,73 +1,256 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
- .lato{
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+
+.lato {
+    font-family: "Lato", sans-serif;
+
 }
-.playfair{
-  font-family: "Playfair", serif;
-  font-weight: 700;
-  font-style: normal;
+
+.playfair {
+    font-family: "Playfair", serif;
+
 }
-.first-section{
+
+.first-section {
     background-image: url("assests/bootstrap/images/home-hero.jpg");
     /* height: 100vh; */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    
+
 }
-.first-section::before{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    content:"";
-    opacity: 0.4;
-    background-color: rgba(0,0,0);
+
+.first-section::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    opacity: 0.5;
+    background-color: rgba(0, 0, 0);
 }
-.btn-style{
+
+.btn-style {
     background-color: RGB(255, 110, 14);
     border: none;
     border-radius: 10px;
-    font-weight: 600;
+    font-size: 1rem;
     padding-inline: 10px;
     padding-block: 5px;
 }
-.header-content{
+
+.header-content {
     position: relative;
     z-index: 1;
     color: white;
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-block: 30px;
 }
-.p1{
-    font-size: 80px;
+
+.p1 {
+    font-size: 4.5rem;
     color: white;
-    font-weight: 700;
+    font-weight: 800;
 }
-.orange-button{
+
+.orange-button {
+
     background-color: RGB(255, 110, 14);
     border: none;
-    border-radius: 10px;
-    font-weight: 600;
-    padding-inline: 10px;
-    padding-block: 5px;
-    color: white;
+    border-radius: 0.5rem;
+    padding-inline: 2rem;
+    font-size: 1.2rem;
+    padding-block: 0.95rem;
+    color: rgb(255, 255, 255);
 }
-.white-button{
+
+.white-button {
     background-color: white;
+    opacity: 0.5;
+
     border: none;
-    border-radius: 10px;
-    font-weight: 600;
-    padding-inline: 10px;
-    padding-block: 5px;
+    border-radius: 0.5rem;
+    padding-inline: 2rem;
+    font-size: 1.2rem;
+    padding-block: 0.95rem;
+    color: rgb(0, 0, 0);
+}
+
+
+.popular-destination {
+    background-color: #fb56071c;
+    color: #fb5607;
+    text-transform: uppercase;
+    padding: 0.5rem 1.7rem;
+    font-size: 1rem;
+    border-radius: 5rem;
+}
+
+.popular-destination-heading {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.img-container img {
+    border-radius: 3rem;
+    width: 100%;
+    height: auto;
+}
+
+.package-card-details {
+    position: relative;
+    bottom: 6rem;
+    left: 4rem;
+    background-color: white;
+    border-radius: 50%;
+    height: 15rem;
+    width: 15rem;
+}
+
+.star-svg svg {
+    fill: orangered;
+}
+
+.package-card-details-h3 {
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+
+
+
+
+.europe svg {
+
+    fill: tomato;
+}
+
+.about-section {
+    background-color: rgb(255, 247, 236);
+    /* margin-block: 5rem; */
+}
+
+.icon {
+    color: tomato;
+}
+.testimonial {
+    padding-block: 2rem;
+   display: flex;
+    align-items: center;
+    gap: 2rem;
+
+}
+.testimonial>img{
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+}
+
+.testimonial-img{
+
+    position: relative;
+    right: 1rem;
+}
+.destinations-image>img{
+   
+    border: none;
+    border-radius: 5.5rem;
+    
+    
+}
+.image-destination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 100%;
+    height: auto;
+   
+}
+
+.tour-image {
+    background-image: url("assests/bootstrap/images/home-tour.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.tour-image::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    opacity: 0.5;
+    background-color: rgba(0, 0, 0);
+}
+.tour-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+  
+}
+.popular-destination-heading {
+    font-size: 3rem;
+    font-weight: 700;
+}
+.tour-card {
+    background-color: white;
     color: black;
+    border-radius: 2rem;
+
+   
+}
+
+
+.tour-details-1>i{
+    color: #e94a00;
+    font-size: 2rem;
+}
+.tour-content {
+    padding-top: 5rem;
+
+}
+.tour-details-1{
+    padding-inline: 2rem;
+    padding-block: 1rem;
+}
+.tour-row{
+   
+  position: relative;
+  top: 3rem;
+  left: 8rem;
+   
+    
+}
+.Reviews-section{
+
+    padding-top: 10rem;
+
+}
+.Reviews-content{
+    padding-inline: 25rem;
+    text-align: center;
+}
+.Reviews-content>i{
+    color: #e94a00;
+    font-size: 4rem;
+}
+.Reviews-content>h1{
+    font-size: 4rem;
+     font-family: "Playfair", serif;
+     font-weight: 800;
+}
+.Reviews-content>h4{
+     font-family: "Playfair", serif;
+     font-size: 1.5rem;
+     font-weight: 600;
 }
