@@ -121,13 +121,15 @@
         font-family: "Playfair", serif;
         font-size: 3rem;
     }
-
+    .heading {
+        font-size: 36px;
+      }
     
 
     .testing {
         display: flex;
         flex-direction: column-reverse;
-       
+       bottom :2rem;
 
     }
 }

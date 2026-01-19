@@ -43,6 +43,16 @@
     border-radius: 4px;
 }
 
+.orange-color {
+
+    color: orangered;
+}
+
+.orange-bgcolor {
+
+    background-color: orangered !important;
+}
+
 /* Make hamburger icon white */
 .bg-orange .navbar-toggler-icon {
     filter: invert(1);
@@ -62,6 +72,12 @@
     z-index: 1;
     color: white;
     padding-block: 30px;
+}
+
+.hero-heading {
+    font-family: "Playfair", serif;
+    font-size: 5rem;
+    font-weight: 800;
 }
 
 .p1 {
@@ -158,7 +174,7 @@
     align-items: center;
     width: 100%;
     height: auto;
-    
+
 
 }
 
@@ -237,10 +253,11 @@ footer {
         RGB(0, 18, 25);
 }
 
-.about-section{
- background-color:RGB(255, 247, 236); 
+.about-section {
+    background-color: RGB(255, 247, 236);
 
 }
+
 .about-badge {
     display: inline-block;
     padding: 6px 18px;
@@ -317,15 +334,16 @@ footer {
     margin-right: -10px;
     border: 2px solid #fff;
 }
-  .why-us {
-      background: 
-        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
-        url("assests/bootstrap/images/home-tour.jpg") ;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        
-    }
+
+.why-us {
+    background:
+        linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)),
+        url("assests/bootstrap/images/home-tour.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
 
 .tour-content {
     position: relative;
@@ -336,6 +354,7 @@ footer {
 
 
 }
+
 .tour-details-1 {
     color: #e94a00;
     font-size: 2rem;
@@ -388,17 +407,10 @@ footer {
     font-size: 0.85rem;
     padding: 6px 12px;
 }
-.orange-color{
-   
-    color:orangered;
-}
-.orange-bgcolor{
 
-    color:orangered;
-}
-.package-heading{
+.package-heading {
 
-     font-family: "Playfair", serif;
+    font-family: "Playfair", serif;
     font-size: 5rem;
     text-align: center;
 }
@@ -440,8 +452,9 @@ footer {
     background: url("assests/bootstrap/images/explore.jpg") center/cover no-repeat;
     position: relative;
 }
-.image-box::before{
-     position: absolute;
+
+.image-box::before {
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -451,6 +464,7 @@ footer {
     opacity: 0.5;
     background-color: rgba(0, 0, 0);
 }
+
 /* Overlay text */
 .image-overlay-text {
     position: absolute;
@@ -469,13 +483,236 @@ footer {
     padding: 12px;
     border-radius: 6px;
 }
-.contact-form-container{
+
+.contact-form-container {
 
     position: relative;
-    top: -6rem;
+    top: -7rem;
 }
-.contact-left{
-    background-color: #ffd1af;
+
+.contact-left {
+    background-color: #ffede0;
     padding: 2rem;
     border-radius: 2rem;
 }
+
+
+
+
+.address-card {
+    background-color: #fff6ec;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.icon-circle {
+    width: 50px;
+    height: 50px;
+    background-color: #ff6a00;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-circle i {
+    color: #fff;
+    font-size: 22px;
+}
+
+.about-section {
+    background-image: url("assests/bootstrap/images/about-hero.jpg");
+    /* height: 100vh; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.about-section::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    opacity: 0.5;
+    background-color: rgba(0, 0, 0);
+}
+
+
+.about-container {
+
+    position: relative;
+    top: -13rem;
+}
+
+.stats-card {
+    background-color: #ffffff;
+    border-radius: 4rem;
+    padding: 50px 30px;
+    border: 1px solid rgb(187, 187, 187);
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    background-color: #fffbf6;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.icon-box i {
+    color: #ff6a00;
+    font-size: 26px;
+}
+
+.stat-number {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.stat-text {
+    font-size: 16px;
+    color: #555;
+}
+
+.badge-custom {
+    background-color: #ffe9dc;
+    color: #ff6a00;
+    padding: 8px 18px;
+    border-radius: 2rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.heading {
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 1.1; 
+    font-family: "Playfair", serif;
+}
+
+.desc {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.happy-users img {
+   
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-left: -15px;
+}
+
+.travel-img {
+    border-radius: 40px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.check-item i {
+    color: #ff6a00;
+    margin-right: 8px;
+}
+
+    .about-badge {
+      background-color: #ffe9dc;
+      color: #ff6a00;
+      padding: 8px 18px;
+      border-radius: 30px;
+      font-size: 13px;
+      letter-spacing: 1px;
+      display: inline-block;
+    }
+
+    .about-title {
+      font-size: 52px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .about-desc {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.8;
+    }
+
+    .about-btn {
+      background-color: #ff6a00;
+      color: #fff;
+      padding: 14px 28px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .about-btn:hover {
+      background-color: #e85f00;
+      color: #fff;
+    }
+
+    .img-box img {
+      
+      object-fit: cover;
+      border-radius: 30px;
+    }
+
+    
+    
+    .about-badge {
+      background-color: #ffe9dc;
+      color: #ff6a00;
+      padding: 8px 18px;
+      border-radius: 30px;
+      font-size: 13px;
+      letter-spacing: 1px;
+      display: inline-block;
+    }
+
+    .about-title {
+      font-size: 52px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .about-desc {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.8;
+    }
+
+    .about-btn {
+      background-color: #ff6a00;
+      color: #fff;
+      padding: 14px 28px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .about-btn:hover {
+      background-color: #e85f00;
+      color: #fff;
+    }
+
+    .img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 30px;
+    }
+    .about-package{
+        background-color: beige;
+    }
