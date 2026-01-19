@@ -37,6 +37,17 @@
     background-color: rgba(0, 0, 0);
 }
 
+/* Bootstrap-style orange toggle */
+.bg-orange {
+    background-color: #ff6a00 !important;
+    border-radius: 4px;
+}
+
+/* Make hamburger icon white */
+.bg-orange .navbar-toggler-icon {
+    filter: invert(1);
+}
+
 .btn-style {
     background-color: RGB(255, 110, 14);
     border: none;
@@ -352,4 +363,119 @@ footer {
     content: "";
     opacity: 0.5;
     background-color: rgba(0, 0, 0);
+}
+
+/* card css */
+
+.travel-card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.travel-card {
+    transition: 0.3s ease;
+}
+
+.travel-card:hover {
+    transform: translateY(-6px);
+}
+
+.price-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: orangered;
+    font-size: 0.85rem;
+    padding: 6px 12px;
+}
+.orange-color{
+   
+    color:orangered;
+}
+.orange-bgcolor{
+
+    color:orangered;
+}
+.package-heading{
+
+     font-family: "Playfair", serif;
+    font-size: 5rem;
+    text-align: center;
+}
+
+/* contact css starts */
+
+.contact-section {
+    background-image: url("assests/bootstrap/images/contact-hero.jpg");
+    /* height: 100vh; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.contact-section::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    opacity: 0.5;
+    background-color: rgba(0, 0, 0);
+}
+
+/* Card container */
+.contact-card {
+    background: #fffcf4;
+    border-radius: 40px;
+}
+
+/* Image box */
+.image-box {
+    height: 100%;
+    min-height: 420px;
+    border-radius: 2rem;
+    background: url("assests/bootstrap/images/explore.jpg") center/cover no-repeat;
+    position: relative;
+}
+.image-box::before{
+     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    content: "";
+    opacity: 0.5;
+    background-color: rgba(0, 0, 0);
+}
+/* Overlay text */
+.image-overlay-text {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: serif;
+}
+
+
+/* Form controls */
+.form-control {
+    padding: 12px;
+    border-radius: 6px;
+}
+.contact-form-container{
+
+    position: relative;
+    top: -6rem;
+}
+.contact-left{
+    background-color: #ffd1af;
+    padding: 2rem;
+    border-radius: 2rem;
 }

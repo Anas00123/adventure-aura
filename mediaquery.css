@@ -2,7 +2,7 @@
 
     .hero-heading {
         font-size: 3rem;
-        
+
     }
 
     .orange-button,
@@ -55,7 +55,8 @@
     .tour-right>h1 {
         text-align: center;
     }
-    .tour-right>span{
+
+    .tour-right>span {
         margin-left: 7rem;
     }
 
@@ -97,7 +98,36 @@
     .image-section {
         padding-top: 15rem;
     }
-    
- 
 
+    .package-card img {
+        height: 200px;
+    }
+
+    .price-badge {
+        font-size: 0.85rem;
+        padding: 5px 12px;
+    }
+
+    .package-card img {
+        height: 180px;
+    }
+
+    .package-card .card-body {
+        padding: 1rem;
+    }
+
+    .package-heading {
+
+        font-family: "Playfair", serif;
+        font-size: 3rem;
+    }
+
+    
+
+    .testing {
+        display: flex;
+        flex-direction: column-reverse;
+       
+
+    }
 }
